@@ -1,0 +1,39 @@
+Example Question:
+p.then(value => console.log(value));
+
+Question 1:
+p.then(value => console.log(value));
+
+Question 2:
+p.then(value => 1);
+
+Question 3:
+p.then(value => console.log(value));
+
+Question 4:
+p.then(value => console.log(value['name']));
+
+Question 5:
+p.catch((error) => console.log(error));
+
+Question 6:
+p.then().finally(console.log("Promise settled"));
+
+Question 7:
+p.then(value => console.log(value*2));
+
+Question 8:
+p.catch(error => console.log(0));
+
+Question 9:
+Promise.all(promises).then((values) => {
+  console.log(values);
+});
+
+Question 10:
+Promise.race(promises).then((value) => {
+  console.log(value);
+});
+
+Bonus Question:
+p.then(value => new Promise((resolve) => setTimeout(() => console.log("Hello " + value), 1)));
